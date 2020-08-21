@@ -1,0 +1,68 @@
+<DOCTYPE! html>
+<html> <lang="en" dir="ltr">
+<head>
+  <title>Aaron Zomback, filmmaker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="img/aaronzomback.svg" alt="Aaron Zomback"></a>
+  </header>
+
+  <div class="sidenav">
+    <button class="dropdown-btn">films
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="films-container">
+      <a href="sb.html">Sovereign Blue (2018)</a>
+      <a href="expandedmetal.html">Expanded Metal (2016)</a>
+      <a href="#">side projects</a>
+    </div>
+  <a href="#photography">photography</a>
+  <a href="#blog">blog</a>
+  <a href="#info">info</a>
+  <a href="#info">press</a>
+  <a href="#contact">contact</a>
+</div>
+
+<div class="sb">
+  <img src="img/exmet.svg" alt="expandedmetal">
+</div>
+
+<footer>
+<img src="img/2020.svg" alt="copyright 2020">
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+  $(".dropdown-btn").on("click", function () {
+      $(".fa-caret-down").toggleClass("active");
+  })</script>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+</body>
+
+
+</html>
