@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "RobotoMono-Regular";
+  font-weight: 400px;
+  src: url(fonts/RobotoMono-Regular.ttf);
+}
+
+
+body {
+  font-family: "RobotoMono-Regular";
+}
