@@ -1,10 +1,22 @@
-@font-face {
-  font-family: "RobotoMono-Regular";
-  font-weight: 400px;
-  src: url(fonts/RobotoMono-Regular.ttf);
+@font-face{
+  font-family: "CrimsonText";
+  font-weight: 400;
+  src: url(fonts/CrimsonText-Regular.ttf);
 }
 
 
+:root{
+  --body-font: "CrimsonText";
+  --h1-size: 96px;
+  --h2-size: 64px;
+  --h3-size: 32px;
+  --body-size: 24px;
+  --button-size: 16px;
+  --nav-size: 24px;
+}
+
 body {
-  font-family: "RobotoMono-Regular";
+  font-family: var(--body-font);
+  font-size: var(--nav-size);
+  color: #040202;
 }
